@@ -28,7 +28,10 @@ const slideImages = [
 
 const Home = () => {
   return (
-    <div className="slide-container" style={{ position: 'relative', height: '100vh', width: '100%' }}>
+    <div className=" height: 100vh width: 100% z-index: -1 slide-container" style={{ position: 'relative', height: '100vh', width: '100%' }}>
+      
+        
+    
       <Slide
         autoplay={true}
         duration={1000} 
@@ -48,7 +51,8 @@ const Home = () => {
             }}
           ></div>
         ))}
-      </Slide>
+        </Slide>
+       
     </div>
   );
 };
