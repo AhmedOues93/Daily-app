@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
    
-  <div className="navbar  flex justify-between bg-gradient-to-r from-Emerald-500 via-sky-500 to-indigo-500 shadow-sm">
+  <div className="navbar  flex justify-between bg-white/70 backdrop-blur-md  shadow-sm">
     <h1 className="text-4xl font-bold  "> Daily-Portal  </h1>
     <ul className="menu menu-horizontal text-xl gap-4">
         <li>
