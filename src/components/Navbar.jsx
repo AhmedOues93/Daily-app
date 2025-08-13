@@ -1,31 +1,50 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="bg-gradient-to-r from-indigo-600 to-violet-500 p-4">
-      <h1 className="text-white text-2xl font-bold">Daily Portal</h1>
-      <ul className="flex space-x-5 text-white text-center mt-2">
-        {/* <li>Home</li>
-        <li>News</li>
-        <li>Weather</li>
-        <li>Events</li> */}
-        {/* <li>
-          <link to="/">Home</link>
-        </li>
+   
+  <div className="navbar  flex justify-between bg-gradient-to-r from-Emerald-500 via-sky-500 to-indigo-500 shadow-sm">
+    <h1 className="text-4xl font-bold  "> Daily-Portal  </h1>
+    <ul className="menu menu-horizontal text-xl gap-4">
         <li>
-          <link to="/weather"> Weather</link>
+          <Link
+            to="/"
+            className="text-black- text-2xl hover:text-blue-700 "
+          >
+            Home
+          </Link>
         </li>
-        <li>
-          {" "}
-          <link to="/news">News</link>
+           <li>
+          <Link
+            to="/news"
+            className="text-black--2xl hover:text-blue-700 "
+          >
+            News
+          </Link>
         </li>
-        <li>
-          <link to="/events">Events</link>
-        </li> */}
-      </ul>
+           <li>
+          <Link
+            to="/weather"
+            className="text-black--2xl hover:text-blue-700 "
+          >
+            Weather
+          </Link>
+        </li>
+           <li>
+          <Link
+            to="/events"
+            className="text-black--2xl hover:text-blue-700 "
+          >
+            Events
+          </Link>
+        </li>
+
+        </ul>
+  
     </div>
   );
-};
+}
+
 
 export default Navbar;
