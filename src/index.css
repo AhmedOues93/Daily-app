@@ -2,3 +2,7 @@
  @import "tailwindcss";
 @plugin "daisyui"; 
 @import "react-slideshow-image/dist/styles.css";
+.custom-font {
+    font-family: 'UnifrakturCook', cursive;
+}
+

@@ -1,42 +1,64 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import SplitText from "./SplitText";
 
 const Navbar = () => {
+
+  const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
   return (
    
-  <div className="navbar  flex justify-between bg-white/70 backdrop-blur-md  shadow-sm">
-    <h1 className="text-4xl font-bold  "> Daily-Portal  </h1>
-    <ul className="menu menu-horizontal text-xl gap-4">
+  <div className="navbar  flex justify-between bg-black/30 backdrop-blur-md  shadow-sm">
+
+
+
+
+<SplitText
+  text="Tägliches Portal"
+  className="text-4xl font-semibold text-red-700 text-center font-[UnifrakturCook] "
+  delay={100}
+  duration={0.3}
+  ease="power3.out"
+  splitType="chars"
+  from={{ opacity: 0, y: 40 }}
+  to={{ opacity: 1, y: 0 }}
+  threshold={0.1}
+  rootMargin="-100px"
+  textAlign="center"
+  onLetterAnimationComplete={handleAnimationComplete}
+/>
+    <ul className="menu menu-horizontal text-xl gap-2">
         <li>
           <Link
             to="/"
-            className="text-black- text-2xl hover:text-blue-700 "
+            className="text-white text-2xl hover:text-blue-700 "
           >
-            Home
+            Starseite
           </Link>
         </li>
            <li>
           <Link
             to="/news"
-            className="text-black--2xl hover:text-blue-700 "
+            className="text-white text-2xl hover:text-blue-700 "
           >
-            News
+            Nachrichten
           </Link>
         </li>
            <li>
           <Link
             to="/weather"
-            className="text-black--2xl hover:text-blue-700 "
+            className="text-white text-2xl hover:text-blue-700 "
           >
-            Weather
+            Wetter
           </Link>
         </li>
            <li>
           <Link
             to="/events"
-            className="text-black--2xl hover:text-blue-700 "
+            className="text-white text-2xl hover:text-blue-700 "
           >
-            Events
+             Veranstaltungen
           </Link>
         </li>
 
