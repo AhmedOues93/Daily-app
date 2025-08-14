@@ -45,14 +45,7 @@ const Navbar = () => {
             Nachrichten
           </Link>
         </li>
-           <li>
-          <Link
-            to="/weather"
-            className="text-white text-2xl hover:text-blue-700 "
-          >
-            Wetter
-          </Link>
-        </li>
+    
            <li>
           <Link
             to="/events"

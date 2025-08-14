@@ -11,6 +11,7 @@ import weather1 from '../assets/weather1.jpg';
 import news4 from '../assets/news4.jpg';
 import news5 from '../assets/news5.jpg';
 import news6 from '../assets/news6.jpg';
+import Weather from "../components/Weather";
 
 
 const slideImages = [
@@ -28,9 +29,11 @@ const slideImages = [
 
 const Home = () => {
   return (
-    <div className=" height: 100vh width: 100% z-index: -1 slide-container" style={{ position: 'relative', height: '100vh', width: '100%' }}>
       
-        
+    <div className=" height: 100vh width: 100% z-index: -1 slide-container" style={{ position: 'relative', height: '100vh', width: '100%' }}>
+     <div className="fixed top-24 left-5 z-20">
+        <Weather />
+      </div>
     
       <Slide
         autoplay={true}
@@ -39,6 +42,8 @@ const Home = () => {
         infinite={true}
         arrows={false} 
       >
+      
+        
         {slideImages.map((img, index) => (
           <div
             key={index}
@@ -52,7 +57,6 @@ const Home = () => {
           ></div>
         ))}
         </Slide>
-       
     </div>
   );
 };
