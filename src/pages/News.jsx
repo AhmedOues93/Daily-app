@@ -25,26 +25,26 @@ const News = () => {
         const response = await fetch(apiUrl);
         const data = await response.json();
 
-        console.log(data); // Debug: check the API response in browser console
+        console.log(data); // Debug
 
         // Update articles state (if data exists)
         setArticles(data.articles || []);
       } catch (error) {
         console.error("Error fetching news:", error);
       } finally {
-        // Set loading to false whether the fetch succeeds or fails
+        // Set loading
         setLoading(false);
       }
     };
 
     fetchNews();
-  }, []); // Empty dependency array = run only once when component mounts
+  }, []);
 
   // Show loading text while fetching data
   if (loading) {
     return <p>Loading...</p>;
   }
-    const formatDate = (dateString) => {
+  const formatDate = (dateString) => {
     return new Date(dateString).toLocaleDateString("en-DE", {
       year: "numeric",
       month: "short",
@@ -54,7 +54,7 @@ const News = () => {
 
   return (
     <div className="items-center justify-center p-4 slide-container">
-      {/* First slideshow - Large Featured Images */}
+      {/* First slideshow Featured Images */}
       <Slide
         autoplay={true}
         duration={2000}
@@ -63,7 +63,7 @@ const News = () => {
         arrows={false}
       >
         {articles
-          .filter((article) => article.image) // Only show articles that have an image
+          .filter((article) => article.image) // Only show articles  have an image
           .map((article, index) => (
             <div
               key={index}
@@ -82,7 +82,7 @@ const News = () => {
                   borderRadius: "20px",
                 }}
               />
-              {/* Article title below the image */}
+
               <h3 className="card bg-white/40 p-5 text-2xl mb-5 mt-1 justify-center">
                 {article.title}
               </h3>
@@ -90,7 +90,7 @@ const News = () => {
           ))}
       </Slide>
 
-      {/* Second slideshow - Grid of smaller news cards */}
+      {/* Second slideshow  Grid  news cards */}
       <Slide
         autoplay={true}
         duration={3000}
@@ -117,15 +117,13 @@ const News = () => {
                   />
                 </figure>
 
-                {/* Article title */}
                 <h2 className="card-title text-lg font-semibold mt-2 text-center">
                   {article.title}
                 </h2>
-                  <p className="text-xs text-gray-600 mt-1">
+                <p className="text-xs text-gray-600 mt-1">
                   {article.source?.name} • {formatDate(article.publishedAt)}
                 </p>
 
-                {/* Article description toggle */}
                 <div className="card-actions justify-center mt-2">
                   {isExpanded && (
                     <div>
