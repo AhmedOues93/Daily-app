@@ -15,7 +15,7 @@ const News = () => {
       try {
         
         const apiUrl =
-          "https://newsapi.org/v2/everything?q=tesla&from=2025-07-14&sortBy=publishedAt&language=de&apiKey=1874a2b191bc4b899c3ae3e594252874";
+          "https://newsapi.org/v2/everything?q=tesla&from=2025-07-15&sortBy=publishedAt&apiKey=1874a2b191bc4b899c3ae3e594252874";
         const response = await fetch(apiUrl);
         const data = await response.json();
         console.log(data);
@@ -68,7 +68,7 @@ const News = () => {
       </Slide> 
       <Slide
         autoplay={true}
-        duration={2000}
+        duration={3000}
         transitionDuration={500}
         infinite={true}
         arrows={false}

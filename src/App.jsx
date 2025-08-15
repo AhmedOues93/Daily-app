@@ -5,21 +5,19 @@ import { Routes, Route, Router } from 'react-router-dom';
 import Layout from './Layout/Layout';  
 import Home from './pages/Home';
 import News from './pages/News';
-import Weather from './components/Weather';
-import Events from './pages/Events';
+
+import Nasa from './pages/Nasa';
 
 function App() {
   return (
-   
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
+<Routes>
+  <Route path="/" element={<Layout />}>
+    <Route index element={<Home />} />
         <Route path="news" element={<News />} />
-        
-        <Route path="events" element={<Events />} />
-      </Route>
-        </Routes>
-      
+         <Route path="nasa" element={<Nasa />} />
+
+  </Route>
+</Routes>
   );
 }
 
