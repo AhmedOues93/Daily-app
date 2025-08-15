@@ -48,10 +48,10 @@ const Navbar = () => {
     
            <li>
           <Link
-            to="/events"
+            to="/nasa"
             className="text-white text-2xl hover:text-blue-700 "
           >
-             Veranstaltungen
+             Nasa
           </Link>
         </li>
 
