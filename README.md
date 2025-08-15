@@ -1,12 +1,29 @@
-# React + Vite
+# Daily App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Daily App is a React-based web application that provides users with daily information and updates, including astronomy images from NASA and currency exchange rates. The app is designed with a clean and responsive interface, enhanced with animations and slideshows for a better user experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **NASA Astronomy Picture of the Day (APOD)**: Fetches and displays the daily astronomy image from NASA's API.
+- **Currency Exchange Rates**: Shows the latest USD exchange rates in a two-column table format.
+- **Responsive Design**: Works well on both desktop and mobile devices.
+- **Animations**: Uses **React-Bits** for smooth UI animations.
+- **Slideshow**: Implements slideshows using npm packages for rotating images or content.
+- **Error Handling**: Includes an `ErrorBoundary` component to handle unexpected errors gracefully.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript (ES6+)
+- Fetch API for external data
+- CSS / TailwindCSS for styling
+- [React-Bits] & (https://www.npmjs.com/package/react-bits) for UI animations
+- npm packages for slideshows
+- Netlify for deployment
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AhmedOues93/Daily-app.git
+
