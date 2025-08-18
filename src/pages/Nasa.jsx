@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Exchange from "../components/Exchange"; // tu peux garder ton composant Exchange si tu veux
+import Exchange from "../components/Exchange"; 
 
 const Crypto = () => {
   const [cryptoData, setCryptoData] = useState([]);

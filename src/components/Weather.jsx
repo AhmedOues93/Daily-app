@@ -47,7 +47,7 @@ const Weather = () => {
   const onSubmit = () => fetchWeather(city);
 
   return (
-    <div className="i w-[200px] h-[100px] ">
+    <div className= "w-[200px] h-[100px] ">
       
       {/* Search input + button */}
       <div className="mb-5 flex items-center gap-2">

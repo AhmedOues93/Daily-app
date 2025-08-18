@@ -31,9 +31,9 @@ const Home = () => {
   return (
       
     <div className=" height: 100vh width: 100% z-index: -1 slide-container" style={{ position: 'relative', height: '100vh', width: '100%' }}>
-     <div className="fixed top-24 left-5 z-20">
-        <Weather />
-      </div>
+   <div className="fixed md:top-24 md:left-5  left-5 z-20">
+  <Weather />
+</div>
     
       <Slide
         autoplay={true}
