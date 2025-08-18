@@ -3,8 +3,7 @@ import { Routes, Route, Router } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Home from "./pages/Home";
 import News from "./pages/News";
-
-import Nasa from "./pages/Nasa";
+import  Krypto from "./pages/Krypto"
 import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="news" element={<News />} />
-          <Route path="nasa" element={<Nasa />} />
+          <Route path="krypto" element={<Krypto />} />
         </Route>
       </Routes>
     </ErrorBoundary>

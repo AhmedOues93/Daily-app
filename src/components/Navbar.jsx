@@ -35,7 +35,7 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link to="/nasa" className="text-white text-2xl hover:text-blue-300 ">
+          <Link to="/krypto" className="text-white text-2xl hover:text-blue-300 ">
            Krypto & Börse
           </Link>
         </li>
