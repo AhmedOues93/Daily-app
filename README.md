@@ -5,7 +5,6 @@ Daily App is a React-based web application that provides users with daily inform
 ## Features
 
  - **Weather Updates**: Displays current weather information for selected locations.
-- **NASA Astronomy Picture of the Day (APOD)**: Fetches and displays the daily astronomy image from NASA's API.
 - **Currency Exchange Rates**: Shows the latest USD exchange rates in a two-column table format.
 - **Responsive Design**: Works well on both desktop and mobile devices.
 - **Animations**: Uses **React-Bits** for smooth UI animations.
