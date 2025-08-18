@@ -21,6 +21,7 @@ Daily App is a React-based web application that provides users with daily inform
 - [React-Bits] & (https://www.npmjs.com/package/react-bits) for UI animations
 - npm packages for slideshows
 - Netlify for deployment
+- APIs: https://gnews.io/    https://docs.coingecko.com/reference/introduction      https://frankfurter.dev/
 
 ## Installation
 
